@@ -1,0 +1,32 @@
+a {color: green;
+font-size: 1.50em;}
+
+h1 {color: rgb(128, 201, 18);
+font-size: 2.5em;
+text-align: center;}
+
+li {color:green;}
+
+ul {color: gray;}
+
+h2 {color:gray;}
+
+body {
+    background-color: black;
+}
+
+p {color: green;}
+
+button {color:rgb(0, 0, 0);
+height: 3em;
+}
+a {color:green;}
+
+h3 { color: green;
+text-align: center;
+font-size: 3em;
+}
+
+
+
+

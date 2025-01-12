@@ -1,0 +1,30 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.text-container {
+    position: relative;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.fade-text {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.text-container:hover .fade-text {
+    opacity: 1;
+}

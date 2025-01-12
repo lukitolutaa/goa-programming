@@ -1,0 +1,47 @@
+/* საერთო სტილები */
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.5s ease, background-color 0.3s ease;
+}
+
+.rotate {
+    background-color: #ff826c; 
+}
+
+.rotate:hover {
+    transform: rotate(45deg);
+}
+
+.scale {
+    background-color: #69ffad; 
+}
+
+.scale:hover {
+    transform: scale(1.5);
+}
+
+.translate {
+    background-color: #1ec3ff; 
+}
+
+.translate:hover {
+    transform: translateX(100px);
+}
+
+.skew {
+    background-color: #ff7a06; 
+}
+
+.skew:hover {
+    transform: skewX(20deg);
+}

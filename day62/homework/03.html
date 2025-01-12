@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ელემენტების შემოსვლა</title>
+    <style>
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            overflow: hidden; 
+        }
+
+       
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+        }
+
+       
+        .element {
+            opacity: 0; 
+            transform: translateY(50px); 
+            transition: transform 1s ease, opacity 1s ease; 
+        }
+
+        .top {
+            animation: slideFromTop 2s ease forwards;
+        }
+
+        .bottom {
+            animation: slideFromBottom 2s ease forwards;
+        }
+
+        .left {
+            animation: slideFromLeft 2s ease forwards;
+        }
+
+        .right {
+            animation: slideFromRight 2s ease forwards;
+        }
+
+        
+        @keyframes slideFromTop {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideFromBottom {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideFromLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideFromRight {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+     
+        h1 {
+            font-size: 2em;
+            color: white;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #ff8400;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="top">
+            <h1>h</h1>
+            <p>i</p>
+        </div>
+
+        <div class="bottom">
+            <h1>t</h1>
+            <p>h</p>
+        </div>
+
+        <div class="left">
+            <h1>e</h1>
+            <p>r</p>
+        </div>
+
+        <div class="right">
+            <h1>e</h1>
+            <p>:D</p>
+        </div>
+    </div>
+
+</body>
+</html>
